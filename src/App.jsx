@@ -21,7 +21,10 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>Welcome to Bipin THA TANTHA HELI APP</h1>
+        <h1>
+          Welcome to Bipin{" "}
+          <span style={{ color: "green" }}>THA TANTHA HELI</span> APP
+        </h1>
         {currentQuestion < questions.length ? (
           <Question
             question={questions[currentQuestion]}

@@ -3,7 +3,7 @@ import React from "react";
 const Question = ({ question, onAnswerClick }) => {
   return (
     <div className="questions">
-      <h2>{question.question}</h2>
+      <h2 style={{ color: "red" }}>{question.question}</h2>
       <ul className="options">
         {question.answerOptions.map((options) => {
           return (
