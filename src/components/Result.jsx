@@ -14,6 +14,15 @@ const Result = ({ userAnswers, questions, resetQuiz = () => {} }) => {
           return (
             <li key={index} data-correct={userAnswers[index]}>
               Q{index + 1}.{ques.question}
+              <b style={{ color: "green" }}>
+                {userAnswers[index]
+                  ? ""
+                  : `${
+                      questions[index].answerOptions.find(
+                        (ans) => ans.isCorrect
+                      ).text
+                    }`}
+              </b>
             </li>
           );
         })}
